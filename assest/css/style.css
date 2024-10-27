@@ -32,6 +32,8 @@ ul,li{
     --box-swd2: rgba(0, 0, 0, 0.3);
     --border-rds: 2px 28px 2px 28px;
     --border-rds2: 12px;
+    --margin: 0 5%;
+
 }
 .btn{
     font-size: 1.4rem;
@@ -49,16 +51,57 @@ ul,li{
     color: var(--BG-clr);
 }
 /* =========== Common Setup End ============ */
+/* =========== header star ============ */
+.navbar{
+    margin: var(--margin);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-title{
+    font-size: 30px;
+    font-family:"Noto Serif", serif;
+    color: var(--acsent-clr);
+}
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav-item{
+    text-transform: uppercase;
+    border: none;
+}
+.nav-item :hover {
+    background: var(--primary-clr);
+    color: var(--BG-clr);
+    border-radius: var(--border-rds2);
+    
+}
+.nav-link{
+    color: var(--Text-clr);
+    font-size: 18px;
+    padding: 5px 12px;
+}
+/* =========== header ends ============ */
 
-/* 
-  font-weight: 400;
-  font-style: normal;
 
 
-   */
 
-.satisfy-regular {
-    font-family: "Satisfy", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
+
+
+
+@media screen and (max-width : 600px) {
+    .navbar{
+        flex-direction: column
+    }
+
+    .nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+    /* .nav-item{
+        display: none;
+    } */
+
+}
