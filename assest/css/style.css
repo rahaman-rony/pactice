@@ -9,14 +9,53 @@
 html{
     scroll-behavior: smooth;
 }
+h1{
+    font-family: "Satisfy", cursive;
+}
+h2,h3,h4,h5,h6{
+    font-family: "Poppins", sans-serif;
+}
+p,a{
+    font-family: "Noto Serif", serif;
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+:root{
+    --BG-clr : #F6FCDF;
+    --primary-clr: #1A1A19;
+    --Text-clr : #04090f;
+    --secondary-clr: #31511E;
+    --acsent-clr: #475D0A;
+    --box-swd: rgba(0, 0, 0, 0.5);
+    --box-swd2: rgba(0, 0, 0, 0.3);
+    --border-rds: 2px 28px 2px 28px;
+    --border-rds2: 12px;
+}
+.btn{
+    font-size: 1.4rem;
+    font-family: "Satisfy", cursive;
+    padding: 0.5rem 2.5rem;
+    border-radius: var(--border-rds2);
+    border: none;
+    background: #ffffff;
+    color: var(--Text-clr);
+    box-shadow: 4px 4px 12px var(--box-swd2);
+    
+}
+.btn:hover{
+    background: var(--acsent-clr);
+    color: var(--BG-clr);
+}
 /* =========== Common Setup End ============ */
 
-/* font-family: "Poppins", sans-serif;
+/* 
   font-weight: 400;
   font-style: normal;
 
 
-  font-family: "Noto Serif", serif; */
+   */
 
 .satisfy-regular {
     font-family: "Satisfy", cursive;
